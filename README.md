@@ -44,9 +44,15 @@ INSTALACION PARA EL PROYECTO
 √ Add ESLint for code quality? ... No / Yes
 ```
 
+instalar todo y corre el servidor de vue js
+
+```sh
 cd .\vue-rest-api
- npm install
+npm install
+
 npm run dev
+```
+
 
 ENTRER EN VITE.CONFIG EN EL PROYECTO DE VUE-REST-API
 
@@ -70,6 +76,8 @@ export default defineConfig({
 
 })
 ```
+
+
 
 vetur puede tener problemas mejor desactivarla
 
