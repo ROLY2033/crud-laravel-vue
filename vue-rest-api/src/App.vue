@@ -8,12 +8,17 @@ import { RouterLink, RouterView } from 'vue-router'
     <div >
 
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+        <RouterLink class="px-4 py-2 mr-4 bg-indigo-900 rounded text-white" to="/">Home</RouterLink>
+        <RouterLink  class="px-4 py-2 mr-4 bg-indigo-600 hover:bg-indigo-900 rounded text-white" to="/skills">Skills</RouterLink>
+        <RouterLink  class="px-4 py-2 mr-4 bg-indigo-600 hover:bg-indigo-900 rounded text-white" to="/">dev</RouterLink>
+
+    </nav>
     </div>
 
    </header>
+   <main class="max-w-7xl mx-auto min-h-screen">
+        <RouterView />
 
-   <RouterView />
+   </main>
 </template>
+<!-- https://youtu.be/GTiBa9bPCZc?t=3984 -->
