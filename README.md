@@ -28,6 +28,7 @@ php artisan serve
 ```
 
 correr el codigo
+
 ```sh
 npm install
 npm run dev
