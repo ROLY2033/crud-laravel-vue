@@ -1,4 +1,5 @@
 INSTALACION DE LARAVEL
+======================
 
 Instalacion del proyecto
 se necesita php y msql corriendo en cualquier paquete como xampp , wamp , laragon
@@ -27,14 +28,8 @@ php artisan migrate --seed
 php artisan serve
 ```
 
-correr el codigo
-
-```sh
-npm install
-npm run dev
-```
-
 INTALACION DE VUE JS
+====================
 
 ```sh
 npm init vue@latest
@@ -79,7 +74,78 @@ export default defineConfig({
 vetur puede tener problemas mejor desactivarla
 
 
+INSTALACION DE TAILWINDCSS
+===========================
 
+```sh
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+```
+en tailwind css config
+
+```sh
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+    content: [
+      "./index.html",
+      "./src/**/*.{vue,js,ts,jsx,tsx}",
+    ],
+    theme: {
+      extend: {},
+    },
+    plugins: [],
+  }
+```
+
+EL POST CSS
+
+```sh
+const autoprefixer = require('autoprefixer');
+const tailwindcss = require('tailwindcss');
+
+module.exports = {
+    plugins: [
+        tailwindcss,
+        autoprefixer,
+    ],
+};
+```
+
+ir a main css
+```sh
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+IMPORTANTE QUITAR LOS IMPORTS QUE NO VAS A UTILIZAR
+como por ejem
+```hs
+import TheWelcome from '../components/TheWelcome.vue'
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+    content: [
+      "./index.html",
+      "./src/**/*.{vue,js,ts,jsx,tsx}",
+    ],
+    theme: {
+      extend: {},
+    },
+    plugins: [],
+  }
+```
+
+CONFIGURACION FINAL
+en main.js
+```sh
+import './assets/main.css'
+```
+
+instalacion de axios
+```sh
+npm install axios
+```
 
 
 
