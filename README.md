@@ -31,9 +31,11 @@ correr el codigo
 ```sh
 npm install
 npm run dev
+```
 
 INTALACION DE VUE JS
-```
+
+```sh
 npm init vue@latest
 INSTALACION PARA EL PROYECTO
 √ Project name: ... vue-rest-api
