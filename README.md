@@ -34,8 +34,8 @@ npm run dev
 
 INTALACION DE VUE JS
 ```sh
-
 npm init vue@latest
+INSTALACION PARA EL PROYECTO
 √ Project name: ... vue-rest-api
 √ Add TypeScript? ... No / Yes
 √ Add JSX Support? ... No / Yes
